@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
-
-    <!-- Add your stylesheets here -->
-
+  <!-- Add your stylesheets here -->
+     <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <!-- Add your script files -->
+     <div class="road-scene" id="roadScene">
+  
+    <!-- steering wheel -->
+    <div class="steering-wrapper idle" id="steeringWrapper"><img src="image/wheel.png" alt=" "></div>
+
+    <!-- story text  -->
+    <div class="story-card" id="storyCard">
+      <p id="storyText"></p>
+    </div>
+
+    <!-- choice buttons -->
+    <div class="choices" id="choicesContainer">
+      <button class="choice-btn" id="leftBtn" data-dir="left">⬅ Left</button>
+      <button class="choice-btn" id="rightBtn" data-dir="right">Right ➡</button>
+    </div>
+
+    <!-- sound button -->
+     <audio id="bgMusic" src="shorttrip.mp3" loop></audio>
+    <button class="sound-btn" id="soundBtn">Sound Off</button>
+
+    <!-- restart -->
+    <div class="restart-container">
+      <button class="restart-btn" id="restartBtn">Start Over</button>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
