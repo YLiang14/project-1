@@ -4,6 +4,7 @@
 ## Live Demo
 
 - Include a link to the live version of the project hosted on GitHub Pages.
+- https://github.com/YLiang14/project-1.git
 
 ## Project Overview
 
@@ -43,6 +44,7 @@
 
 - Acknowledge any resources, tutorials, or references you used to help complete the project.
 - https://gsap.com/docs/v3/Plugins/SplitText/ (the gsap animation i have use)
+- https://gsap.com/docs/v3/Eases
 https://www.youtube.com/watch?v=RVlB7j7iQao&t=674s (this is the youtube music that i have use)
 https://clipartpng.com/?2466,car-steering-wheel-png-clip-art (the steering wheel i have using the code)
 https://www.magnific.com/free-photos-vectors/cartoon-car-front-inside (the background that i have use in the webpage)
