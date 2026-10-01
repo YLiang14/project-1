@@ -30,8 +30,8 @@ function animateWords(text) {
 }
 // the storytree
 // Each page has:
-//   - text: what the user reads
-//   - leftButton / rightButton: what the buttons say
+//   - text: story text
+//   - leftButton / rightButton: what the will buttons say
 //   - leftGoesTo / rightGoesTo: which page to go to next
 //
 // "end" means the story is over for that path.
@@ -109,7 +109,7 @@ function showPage(pageName) {
   rightBtn.textContent = page.rightButton;
 
   // If this page is an ending, disable both buttons
-  if (page.leftGoesTo === "end") {
+  if (page.leftGoesTo == "end") {
     leftBtn.disabled = true;
     rightBtn.disabled = true;
   } else {
@@ -127,7 +127,7 @@ function turnSteering(direction) {
    // Remove old state
   steeringWrapper.classList.remove("Wobble","turn-left", "turn-right");
 
-  if (direction === "left") {
+  if (direction == "left") {
     steeringWrapper.classList.add("turn-left");
   } else {
     steeringWrapper.classList.add("turn-right");
@@ -141,7 +141,7 @@ function handleChoice(direction) {
   // Find out where the button goes
   let nextPage;
 
-   if (direction === "left") {
+   if (direction == "left") {
       nextPage = page.leftGoesTo;
     } else {
       nextPage = page.rightGoesTo;
@@ -151,7 +151,7 @@ function handleChoice(direction) {
   turnSteering(direction);
 
   // If the next page is "end", do nothing
-  if (nextPage === "end") return;
+  if (nextPage == "end") return;
 
   // Otherwise, show the next page
   showPage(nextPage);
